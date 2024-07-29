@@ -40,6 +40,7 @@ Marks a class as a JPA entity.
 #### Example Usage
 ### Without Builder
 Creating an OrderEntity object without using the builder pattern:
+```java
 OrderEntity oe = new OrderEntity();
 oe.setId(12);
 oe.setOrderName("cake");
@@ -49,6 +50,7 @@ System.out.println(oe);
 
 ### With Builder
 Creating an OrderEntity object using the builder pattern:
+```java
 OrderEntity oe1 = OrderEntity.builder()
     .id(1)
     .orderName("pizza")
