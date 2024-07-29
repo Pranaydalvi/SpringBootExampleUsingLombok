@@ -47,6 +47,7 @@ oe.setOrderName("cake");
 oe.setOrderStatus("done");
 oe.setOrderType("online");
 System.out.println(oe);
+'''
 
 ### With Builder
 Creating an OrderEntity object using the builder pattern:
@@ -59,6 +60,7 @@ OrderEntity oe1 = OrderEntity.builder()
     .payment(Payment.builder().pid(1).status("done").build())
     .build();
 System.out.println(oe1);
+'''
 
 ## Project Structure
 
