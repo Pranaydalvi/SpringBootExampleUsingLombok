@@ -40,29 +40,25 @@ Marks a class as a JPA entity.
 #### Example Usage
 ### Without Builder
 Creating an OrderEntity object without using the builder pattern:
-```java
-OrderEntity oe = new OrderEntity();
-oe.setId(12);
-oe.setOrderName("cake");
-oe.setOrderStatus("done");
-oe.setOrderType("online");
-System.out.println(oe);
-'''
+- OrderEntity oe = new OrderEntity();
+- oe.setId(12);
+- oe.setOrderName("cake");
+- oe.setOrderStatus("done");
+- oe.setOrderType("online");
+- System.out.println(oe);
 
 ### With Builder
 Creating an OrderEntity object using the builder pattern:
-```java
-OrderEntity oe1 = OrderEntity.builder()
-    .id(1)
-    .orderName("pizza")
-    .orderStatus("done")
-    .orderType("cash")
-    .payment(Payment.builder().pid(1).status("done").build())
-    .build();
-System.out.println(oe1);
-'''
+- OrderEntity oe1 = OrderEntity.builder()
+-     .id(1)
+-   .orderName("pizza")
+-       .orderStatus("done")
+-       .orderType("cash")
+-       .payment(Payment.builder().pid(1).status("done").build())
+-       .build();
+-   System.out.println(oe1);
 
-## Project Structure
+###  Project Structure
 
 The project is organized into the following packages:
 
